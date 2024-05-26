@@ -6,6 +6,7 @@ import Header from "./components/header";
 // applied lazy loading taaki jo jb necessary hi tbhi load ho
 // dynamic import
 const Home = lazy(() => import("./pages/home"));
+const Shipping = lazy(() => import("./pages/shipping"));
 const Search = lazy(() => import("./pages/search"));
 const Cart = lazy(() => import("./pages/cart"));
 
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/shipping" element={<Shipping />} />
 
           {/* Admin Routes */}
           <Route
